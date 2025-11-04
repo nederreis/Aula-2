@@ -3,6 +3,7 @@
 <head>
     <title> Conversor de Moedas </title>
     <link rel="stylesheet" href="style.css" > 
+    <script src="script.js"></script>
 </head>
 
 <body>
@@ -10,12 +11,11 @@
 <h1>Conversor de Moedas</h1>
 
 <h2>Cotacao Atual</h2>
-<h2>U$ 1,00 = R$ 5,403</h2>
+<h2>U$ 1,00 = R$ <span id="cotacao">xxxx,xx</span></h2>
 
-<input type="number">
-<button>Converter</button>
-<h3>Valor Convertido R$ xxxxx,xx</h3>
-
+<input type="number" id="valorbr">
+<button onclick="calcular()"> converter </button>
+<h3>Valor Convertido R$ <span id="valor">xxxx,xx</span></h3>
+<h4></h4>
 </body>
-
 </html>
